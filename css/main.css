@@ -1,0 +1,438 @@
+/*медиазапросы до 350px*/
+/*MAIN ------------------------------*/
+.main {
+	flex: 1 1 auto;
+}
+
+/*блок с информацией о фотографии*/
+.project__info_text {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 20px;
+	padding-bottom: 1px;
+}
+
+.project__info_name {
+	font-size: 54px;
+	line-height: 59px;
+	margin-bottom: 18px;
+	color: #fff;
+}
+.project__info_description {
+	line-height: 20px;
+}
+
+/*параметры фотографии*/
+.parameter {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	right: 40px;
+	bottom: 40px;
+	font-size: 12px;
+	color: #fff;
+}
+@media (max-width: 340px) {
+	.parameter {
+		right: 10px;
+	}
+}
+.exposure, .diaphragm, .photosensitivity, .location {
+	display: flex;
+	align-items: center;
+	margin-right: 16px;
+}
+.exposure p, .diaphragm p, .photosensitivity p, .location p {
+	padding-left: 6px;
+}
+.location {
+	margin-right: 0px;
+}
+@media (max-width: 350px) {
+	.exposure, .diaphragm, .photosensitivity, .location {
+		margin-right: 10px;
+		font-size: 10px;
+	}
+}
+
+/*блоки с информацией и черно-белой кнопкой*/
+.info {
+	position: absolute;
+}
+.info_title {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 20px;
+	padding-bottom: 15px;
+	color: #fff;
+}
+.info_titleTwo {
+	font-size: 28px;
+	line-height: 32px;
+	padding-bottom: 15px;
+}
+.info_text {
+	line-height: 20px;
+}
+@media (max-width: 450px) {
+	.info_text {
+		font-size: 12px;
+	}
+}
+.info_button {
+	background-color: #fff;
+	margin-top: 20px;
+	border-radius: 14px;
+	width: 143px;
+}
+.info_button a {
+	display: flex;
+	align-items: center;
+	padding: 5px 10px 5px 5px;
+	color: black;
+	letter-spacing: 0.4px;
+	line-height: 20px;
+}
+.button-black {
+	width: 32px;
+	height: 32px;
+	background-color: black;
+	border-radius: 14px;
+	margin-right: 5px;
+}
+
+/*main__apertureStudios (первый блок) ------------------------*/
+.main__apertureStudios {
+	width: 100%;
+	height: 716px;
+	background-image: url(../image/apertureStudios.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.apertureStudios__info {
+	position: absolute;
+	width: 600px;
+	bottom: 60px;
+	text-align: center;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+@media (max-width: 640px) {
+	.apertureStudios__info {
+		width: 450px;
+	}
+}
+@media (max-width: 500px) {
+	.apertureStudios__info {
+		width: 350px;
+	}
+}
+@media (max-width: 390px) {
+	.apertureStudios__info {
+		width: 280px;
+	}
+}
+@media (max-width: 340px) {
+	.apertureStudios__info {
+		width: 240px;
+	}
+}
+@media (max-width: 1215px) {
+	.main__apertureStudios .parameter {
+		bottom: 15px;
+	}
+}
+
+/*main__capabilities (второй блок) ------------------------*/
+.main__capabilities {
+	width: 100%;
+}
+.capabilities__container {
+	width: 1212px;
+	margin: 0 auto;
+	padding: 100px 20px 80px;
+}
+@media (max-width: 1220px) {
+	.capabilities__container {
+		width: 1060px;
+	}
+}
+@media (max-width: 1060px) {
+	.capabilities__container {
+		width: 860px;
+	}
+}
+@media (max-width: 860px) {
+	.capabilities__container {
+		width: 660px;
+	}
+}
+@media (max-width: 660px) {
+	.capabilities__container {
+		width: 450px;
+	}
+}
+@media (max-width: 450px) {
+	.capabilities__container {
+		width: 350px;
+	}
+}
+.capabilities_title {
+	font-size: 40px;
+	color: #fff;
+	line-height: 42px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+.capabilities_text {
+	font-size: 23px;
+	line-height: 30px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+.fields {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+@media (max-width: 860px) {
+	.fields {
+		justify-content: center;
+	}
+}
+.field {
+	position: relative;
+	width: 576px;
+	height: 600px;
+	margin-bottom: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+@media (max-width: 1220px) {
+	.field {
+		width: 500px;
+		height: 524px;
+	}
+}
+@media (max-width: 1060px) {
+	.field {
+		width: 400px;
+		height: 424px;
+	}
+}
+@media (max-width: 450px) {
+	.field {
+		width: 300px;
+		height: 324px;
+	}
+}
+@media (max-width: 350px) {
+	.field {
+		width: 200px;
+		height: 224px;
+	}
+}
+.field-one {
+	background-image: url(../image/ProductPhotography.png);
+}
+.field-two {
+	background-image: url(../image/ArchitecturePhotography.png);
+}
+.field-three {
+	background-image: url(../image/DronePhotography.png);
+}
+.field-four {
+	background-image: url(../image/WildlifePhotography.png);
+}
+.field .info {
+	position: absolute;
+	bottom: 30px;
+	margin: 0 30px;
+}
+
+/*main__projectOne (третий блок) ------------------------*/
+.main__projectOne {
+	width: 100%;
+	height: 600px;
+	background-image: url(../image/projectOne.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.projectOne__info {
+	position: absolute;
+	width: 300px;
+	right: 60px;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+@media (max-width: 450px) {
+	.projectOne__info {
+		width: 250px;
+		right: 20px;
+	}
+}
+.main__projectOne .project__info_text {
+	color: #fff;
+}
+
+/*main__tools (четвертый блок) ------------------------*/
+.main__tools {
+	width: 100%;
+	height: 540px;
+	display: flex;
+	position: relative;
+}
+@media (max-width: 700px) {
+	.main__tools {
+		justify-content: center;
+	}
+	.tools__image, .main__tools .parameter {
+		display: none;
+	}
+}
+.tools__info, .tools__image {
+	flex-basis: 50%;
+}
+.tools__info {
+	position: relative;
+}
+.tools__info .info {
+	top: 50%;
+	transform: translate(0, -50%);
+	padding: 0 100px;
+}
+@media (max-width: 1005px) {
+	.tools__info .info {
+		padding: 0 50px;
+	}
+}
+@media (max-width: 700px) {
+	.tools__info .info {
+		padding: 0;
+	}
+}
+.main__tools .info_title {
+	color: #C0C0C0;
+}
+.main__tools .info_titleTwo {
+	color: #fff;
+}
+.main__tools .info_text {
+	color: #bfbfbf;
+}
+.tools__image {
+	background-image: url(../image/tools.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/*main__projectTwo (пятый блок) ------------------------*/
+.main__projectTwo {
+	width: 100%;
+	height: 600px;
+	background-image: url(../image/projectTwo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.projectTwo__info {
+	position: absolute;
+	width: 300px;
+	right: 60px;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+@media (max-width: 450px) {
+	.projectTwo__info {
+		width: 280px;
+		right: 20px;
+	}
+}
+.main__projectTwo .project__info_text {
+	color: #fff;
+}
+
+/*main__projectTwo (шестой блок) ------------------------*/
+.main__customers {
+	width: 100%;
+	height: 500px;
+}
+@media (max-width: 870px) {
+	.main__customers {
+		height: 100%;
+	}
+}
+.customers__container {
+	padding: 120px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.customers__title {
+	font-size: 40px;
+	line-height: 42px;
+	color: #fff;
+	padding-bottom: 25px;
+}
+.customers__text {
+	font-size: 24px;
+	line-height: 30px;
+	padding-bottom: 40px;
+}
+@media (max-width: 870px) {
+	.customers__title {
+		font-size: 30px;
+	}
+	.customers__text {
+		font-size: 19px;
+	}
+}
+.customers__partners {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+@media (max-width: 870px) {
+	.customers__partners {
+		flex-direction: column;
+	}
+}
+.partner {
+	padding: 20px 23px;
+}
+
+/*main__projectThree (седьмой блок) ------------------------*/
+.main__projectThree {
+	width: 100%;
+	height: 600px;
+	background-image: url(../image/projectThree.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.projectThree__info {
+	position: absolute;
+	width: 300px;
+	right: 60px;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+@media (max-width: 450px) {
+	.projectThree__info {
+		width: 280px;
+		right: 20px;
+	}
+}
+.main__projectThree .project__info_text {
+	color: #fff;
+}
